@@ -1,5 +1,5 @@
 function getRandomImage() {
-    fetch("../json/headers.json")
+    fetch("https://raw.githubusercontent.com/CristianoRC/14-BFN/master/json/headers.json")
         .then(response => {
             response.json().then(json => {
                 const index = Math.floor(Math.random() * json.length);

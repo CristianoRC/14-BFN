@@ -12,7 +12,7 @@ function getCardHtml(creator, date, url) {
 }
 
 function getImages() {
-    fetch("../json/posts.json")
+    fetch("https://raw.githubusercontent.com/CristianoRC/14-BFN/master/json/posts.json")
         .then(response => {
             response.json().then(json => {
                 setImages(json)
