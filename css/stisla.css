@@ -3,6 +3,10 @@ html, body {
 	height: 100% !important;
 }
 
+#home{
+	background-size: cover;
+}
+
 .main-loading {
 	position: fixed;
 	top: 50%;
@@ -50,7 +54,7 @@ html, body {
 }
 
 .overlay {
-	background-color: #000;
+	background-color: #0a0a0ae1;
 	opacity: .85;
 	position: absolute;
 	top: 0;
@@ -149,13 +153,15 @@ html, body {
 .navbar.main-navbar {
 	position: fixed;
 	width: 100%;
-	padding-top: 25px;
-	padding-bottom: 25px;
+	padding-top: 0px;
+	padding-bottom: 0px;
 	z-index: 1;
+	transition: .5s;
 }
 
 .navbar.main-navbar.bg-dark {
-	background-color: #000 !important;
+	background-color: #151515 !important;
+	transition: .5s;
 }
 
 .navbar.main-navbar .navbar-brand {
@@ -165,7 +171,9 @@ html, body {
 }
 
 .navbar.main-navbar .navbar-brand img {
-	width: 100%;
+	width: 90%;
+	padding-top: 10px;
+	padding-bottom: 10px;
 }
 
 .navbar.main-navbar .nav-link {
@@ -237,7 +245,7 @@ html, body {
 
 .navbar.main-navbar .form-inline .btn:hover {
 	background-color: #fff;
-	color: #000;
+	color: #151515;
 	opacity: 1;
 }
 
@@ -555,12 +563,14 @@ article.card .card-more i {
 
 /*projects*/
 .projects-picture {
-	width: 250px;
-	margin: 0 auto;
+	width: 90%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
 .projects-picture img {
-	width: 100%;
+	width: 45%;
 }
 
 .projects-details {
@@ -706,7 +716,7 @@ form.contact .btn-primary:hover {
 footer {
 	padding: 80px 0 60px 0;
 	text-align: center;
-	background-color: #000;
+	background-color: #0a0a0a;
 	color: #fff;
 }
 
