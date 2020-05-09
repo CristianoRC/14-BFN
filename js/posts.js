@@ -12,7 +12,6 @@ function getCardHtml(creator, date, url) {
 }
 
 function getImages() {
-
     fetch("../json/posts.json")
         .then(response => {
             response.json().then(json => {
@@ -20,8 +19,6 @@ function getImages() {
             })
 
         });
-
-
 }
 
 function setImages(posts) {
